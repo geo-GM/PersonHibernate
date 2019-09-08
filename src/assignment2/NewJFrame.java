@@ -442,25 +442,6 @@ public class NewJFrame extends javax.swing.JFrame {
         comboObrisi.setEnabled(false);
         obrisi.setEnabled(false);
 
-        /**String hql = "select persons.name from Person persons";
-        Query query = session.createQuery(hql);
-        try {
-            tx = session.beginTransaction();
-            osobe = query.list();
-            tx.commit();
-        } catch (HibernateException e) {
-
-            if (tx != null) {
-                tx.rollback();
-            }
-            System.out.println(e);
-        } finally {
-            HibernateUtil.close();
-        }
-
-        for (String persons : osobe) {
-            comboUpdate.addItem(persons);
-        }*/
     }//GEN-LAST:event_updateActionPerformed
 
     private void obrisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_obrisiActionPerformed
@@ -479,25 +460,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jtf7.setEnabled(false);
         jtf8.setEnabled(false);
 
-        /*String hql = "select persons.name from Person persons";
-        Query query = session.createQuery(hql);
-        try {
-            tx = session.beginTransaction();
-            osobe = query.list();
-            tx.commit();
-        } catch (HibernateException e) {
-
-            if (tx != null) {
-                tx.rollback();
-            }
-            System.out.println(e);
-        } finally {
-            HibernateUtil.close();
-        }
-
-        for (String persons : osobe) {
-            comboObrisi.addItem(persons);
-        }*/
     }//GEN-LAST:event_obrisiActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
@@ -533,14 +495,7 @@ public class NewJFrame extends javax.swing.JFrame {
                         HibernateUtil.close();
                     }
                     for (Person persone : person_list) {
-                        /**
-                         * Object[] columns = {"id", "Name", "Age", "Address",
-                         * "Salary"}; Object[][] rows = { {persone.getID(),
-                         * (persone.getName()).toString(), persone.getAge(),
-                         * (persone.getAddress()).toString(),
-                         * persone.getSalary()}}; JTable jt = new JTable(rows,
-                         * columns); JScrollPane sc = new JScrollPane(jt);*
-                         */
+
                     }
                     jra.setText(person_list.toString());
 
